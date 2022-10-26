@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+  <html lang="ko"> 
+    <head> 
+      <meta charset="UTF-8"> 
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+      <!-- <메타 이름 ="viewport" content="width=device-width, initial-scale=1.0">  -->
+      <title>숫자, 범위</title> 
+    </head> 
+    <body> 
+        <form>
+            <form action="#">
+      <h3>숫자</h3> 
+      <ul> 
+        <li ><input type="search"> 선물용 3kg <input type="number" max="5" min="0" name="rng" step="1" value="2">  개 (가장 큰 5개)</li> 
+        <li><input type="checkbox"> 선물용 5kg <input type="range" max="3" min="0"name="rng" step="1" value="1"> 개 (가장 3개)</li> 
+      </ul>
+    
+      <hr>
+      <h3>range</h3>
+        <ul>
+        </ul>
+        <!-- 버튼의 value는 버튼의 문자 -->
+        <input type="submit" value="등록">
+    </form>
+    <script>
+        rng1.oninput = function () => {
+         alert(rng1.value);
+         };
+    </script>
+    <label>아이디<input type="tel"><input type="reset" value="로그인"></label>
+</body> 
+</html>

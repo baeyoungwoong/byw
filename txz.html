@@ -1,0 +1,196 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content>
+    <title>테이블</title>
+<link rel="stylesheet"
+href="css/table.css">
+
+</head>
+<body>
+    <h1>상품 구성</h1>
+    <table border="4">
+        <caption>선물용과 가정용 상품구성</caption>
+        <thead>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>   
+            <th>가격</th> 
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>선물용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>35,000원</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>선물용</td>
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>52,000원</td>
+        </tr>
+        </tfoot>
+        <tr>
+            <td>가정용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>30,000원</td>
+        </tr>    
+            <td>가정용</td>
+            <td>3kg</td>
+            <td>18~26과</td>
+            <td>47,000원</td>
+        
+        </tr>
+    </table>
+    <hr>
+    <p>rowspan : 행 병합<br>colspan: 열 병합</p>
+    <table>
+       
+        <tr>
+            <td rowspan="2">3</td>
+            <td rowspan="2">4</td>
+            <td colspan="2">5</td>
+        </tr>
+        <tr>
+            
+            
+            <td colspan="2">6</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <caption>요안도라 객실</caption>
+        <thead>
+            <tr>
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>유채방</td>
+                <td>여성 도미토리</td>
+                <td 
+                rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">동백방 </td>
+                <td>동성도미토리</td>
+                
+            </tr>
+            <tr>
+                <td>가족1팀</td>
+
+            </tr>
+            <tr>
+                <td>천혜향방</td>
+                <td>-</td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">바깥채 전체를 렌트합니다</td>
+                
+            </tr>
+            
+        </tfoot>
+        <thead></thead>
+        <thead></thead>
+    </table>
+</body>
+
+<table>
+    <caption>선물용과 가정용 상품 구성</caption>
+    <colgroup>
+        <col style="background-color:yellowgreen; width:120px;">
+        <col>
+        <col style="background-color: blue; width: 150px;">
+        <col style="width: 150px;">
+
+        
+    </colgroup>
+
+    <header>상품 구성</header>
+        <tr>
+        <td>용도</td>
+        <td>중량</td>  
+        <td>개수</td>
+        <td>가격</td>
+        </tr>
+
+        <tr>
+        <td rowspan="2">선물용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>35,000원</td>
+        </tr>
+
+        <tr>
+   
+        <td>5kg</td>
+        <td>18~26과</td>
+        <td>52,000원</td>
+        </tr>
+
+        <tr>
+        <td rowspan="2">가정용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>30,000원</td>
+        </tr>
+
+        <tr>
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>47,000원</td>    
+        </tr>
+</table>
+ <!-- <table>
+    <header>수습 국원 지원 양식</header>
+     <tr>
+        <td rowspan="3">개인정보</td>
+        <td>이름</td>
+    
+     </tr>
+    
+     <tr>
+        <td>학과/학번</td>
+        <td></td>
+    
+     </tr>
+
+     <tr>
+        <td>연락처</td>
+        <td></td>
+    
+     </tr>
+
+     <tr>
+        <td>지원 분야</td>
+        <td colspan="3"></td>
+        <td></td>
+     </tr>
+    </table> -->
+
+    <form action="https://www.bing.com/search"
+    method="get" target="_blank">
+        <input type="text" name="q">
+        <input type="submit">
+    </form>
+    <iframe name="search" width="100%"
+
+    
+
+</html>
